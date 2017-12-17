@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+<title>Login</title>
+<link href="./css/style.css" 
+      rel="stylesheet" type="text/css"/>
+</h:head>
+<h:body>
+<h1 class="title" align="center">Login</h1>
+
+
+<h1><legend align="left">Hello, </legend></h1>
+<div class="row col-xs-12 text-center">
+	<h:dataTable value="#{event.}" var="manager" class="table table-striped">
+           <h:column>
+               <f:facet name="header">
+                   <h:outputText value="First Name"/>
+               </f:facet>
+                   <h:outputText value="#{manager.first_name}"/>
+                  
+           </h:column>
+         </h:dataTable>
+<h:form align="center">
+<a href="managers.xhtml">View Managers</a>
+</h:form>
+
+
+</h:body></html>
